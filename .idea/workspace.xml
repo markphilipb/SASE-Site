@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/startbootstrap-grayscale-gh-pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="24" selection-end-line="228" />
+            <state relative-caret-position="-52">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -149,6 +149,13 @@
               <item name="SaseWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SaseWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SaseWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="startbootstrap-grayscale-gh-pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SaseWebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -286,8 +293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/startbootstrap-grayscale-gh-pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="24" selection-end-line="228" />
+        <state relative-caret-position="-52">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
