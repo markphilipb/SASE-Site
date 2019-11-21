@@ -3,6 +3,7 @@ from flask import render_template
 
 
 @app.route('/')
+@app.route('/index')
 def index():
     return render_template('startbootstrap-grayscale-gh-pages/index.html', title='SASE')
 
