@@ -9,6 +9,7 @@
   <meta name="author" content="">
 
   <title>UBSASE</title>
+  <link rel="icon" href="static/icons/ublogo.png" type="image/png">
 
   <!-- Bootstrap core CSS -->
   <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +22,65 @@
   <!-- Custom styles for this template -->
   <link href="static/css/grayscale.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.linkedin {
+  height: 32px;
+  width: 32px;
+}
+
+  </style>
 
 </head>
 
@@ -30,7 +90,8 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top" >
-        <img src="static/icons/saselogowhite.png" height="50" width="150">
+        <img id="logo" src="static/icons/saselogoiconwhite.png" height=60" width="50">
+        <img src="static/icons/ublogowhite.png" height="50" width="90">
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -42,7 +103,7 @@
             <a class="nav-link js-scroll-trigger" href="#mission">Mission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">The Pillars of SASE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#eboard">E-Board</a>
@@ -62,9 +123,11 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">SASE</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">University at Buffalo</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        <h1 class="mx-auto my-0 text-uppercase">
+          <img src="static/icons/saselogotextwhite.png" height="125" width="400">
+        </h1>
+        <!--<h2 class="text-white-50 mx-auto mt-2 mb-5">University at Buffalo</h2>-->
+        <!--<a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>-->
       </div>
     </div>
   </header>
@@ -89,12 +152,12 @@
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+          <img class="img-fluid mb-3 mb-lg-0" src="static/pillars/eugene.jpg" alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <h4>Professionalism</h4>
+            <p class="text-black-50 mb-0">Prepare Asian heritage scientists and engineers for success in the global business world.</p>
           </div>
         </div>
       </div>
@@ -102,14 +165,14 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <img class="img-fluid" src="static/pillars/diversity.jpg" alt="">
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                <h4 class="text-white">Diversity</h4>
+                <p class="mb-0 text-white-50">Celebrate diversity on campuses and in the workplace.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -120,14 +183,14 @@
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <img class="img-fluid" src="static/pillars/service.jpg" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                <h4 class="text-white">Service</h4>
+                <p class="mb-0 text-white-50">Provide opportunities for members to make contributions to their local communities.</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -141,56 +204,147 @@
   <section id="eboard" class="projects-section bg-light">
     <div class="container">
 
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="static/eboard/steph.png" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Stephanie</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-          </div>
-        </div>
-      </div>
+      <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/steph.jpg" alt="steph" style="width:100%">
+      <div class="container">
+        <h2>Stephanie</h2>
+        <p class="title">President</p>
+        <p>Computer Science '20</p>
+        <p><a href="https://www.linkedin.com/in/stephanie-y-658b94103/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
 
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="static/eboard/yuki.png" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Yuki</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="static/eboard/purvi.png" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Purvi</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/yuki.jpg" alt="yuki" style="width:100%">
+      <div class="container">
+        <h2>Yuki</h2>
+        <p class="title">Vice President</p>
+        <p>Industrial Engineering '20</p>
+        <p><a href="https://www.linkedin.com/in/luo-cao/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/purvi.jpg" alt="purvi" style="width:100%">
+      <div class="container">
+        <h2>Purvi</h2>
+        <p class="title">Treasurer</p>
+        <p>Biomedical Engineering & Math '21</p>
+        <p><a href="https://www.linkedin.com/in/purvip99/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/sakib.jpg" alt="sakib" style="width:100%">
+      <div class="container">
+        <h2>Sakib</h2>
+        <p class="title">Technical Director</p>
+        <p>Aerospace Engineering '20</p>
+        <p><a href="https://www.linkedin.com/in/sakib-ahmed-52a4b3175/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/mai.jpg" alt="mai" style="width:100%">
+      <div class="container">
+        <h2>Maitri</h2>
+        <p class="title">Marketing Director</p>
+        <p>Biological Sciences '21</p>
+        <p><a href="https://www.linkedin.com/in/maitri-parsana-9331b2157/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/lisa1.jpg" alt="lisa" style="width:100%">
+      <div class="container">
+        <h2>Lisa</h2>
+        <p class="title">Secretary</p>
+        <p>Aerospace & Mechanical Engineering '20</p>
+        <p><a href="https://www.linkedin.com/in/lisa-hu-345703136/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/punit.jpg" alt="punit" style="width:100%">
+      <div class="container">
+        <h2>Punit</h2>
+        <p class="title">Public Relations Director</p>
+        <p>Aerospace & Mechanical Engineering '21</p>
+        <p><a href="https://www.linkedin.com/in/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/pom.jpg" alt="pom" style="width:100%">
+      <div class="container">
+        <h2>Pomeroy</h2>
+        <p class="title">Battle-Bot Technical Leader</p>
+        <p>Aerospace Engineering '20</p>
+        <p><a href="https://www.linkedin.com/in/pom-moh/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/jj.jpg" alt="jj" style="width:100%">
+      <div class="container">
+        <h2>Jung Gi Lee</h2>
+        <p class="title">3d Design & IPS Technical Lead</p>
+        <p>Aerospace & Mechanical Engineering '20</p>
+        <p><a href="https://www.linkedin.com/in/"><img src="static/icons/linkedinicon.png" class="linkedin"></a></p>
+
+      </div>
+    </div>
+  </div>
+
+        <div class="column">
+    <div class="card">
+      <img src="static/eboardnew/me.jpg" alt="me" style="width:100%">
+      <div class="container">
+        <h2>Mark</h2>
+        <p class="title">Website Technical Lead</p>
+        <p>Computer Science '20</p>
+        <p>
+          <a href="https://www.linkedin.com/in/mark-balazon-9a5214170/"><img src="static/icons/linkedinicon.png" class="linkedin"></a>
+          <a href="https://www.github.com/markphilipb/"><img src="static/icons/githublogo.png"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+    </div>
+
+  </section>
 
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
@@ -199,10 +353,10 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <h2 class="text-white mb-5">Join our mailing list!</h2>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+          <form class="form-inline d-flex" action="/email" method="post">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="inem" id="inputEmail" placeholder="Enter email address...">
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
           </form>
 
@@ -244,26 +398,26 @@
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
+              <i class="fab fa-facebook-f" style="font-size:24px"></i>
+              <h4 class="text-uppercase m-0">Facebook</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">@ubsase</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
+      <!--<div class="social d-flex justify-content-center">-->
+        <!--<a href="#" class="mx-2">-->
+          <!--<i class="fab fa-twitter"></i>-->
+        <!--</a>-->
+        <!--<a href="#" class="mx-2">-->
+          <!--<i class="fab fa-facebook-f"></i>-->
+        <!--</a>-->
+        <!--<a href="#" class="mx-2">-->
+          <!--<i class="fab fa-github"></i>-->
+        <!--</a>-->
+      <!--</div>-->
 
     </div>
   </section>
@@ -271,7 +425,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; 2020 Society of Asian Scientists & Engineers UB | Developed by Mark Balazon | Graphic Designs by Bootstrap
     </div>
   </footer>
 
